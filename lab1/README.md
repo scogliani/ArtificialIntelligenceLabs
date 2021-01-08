@@ -7,13 +7,14 @@ Start by download `labyrinth.tgz` from the eLearning platform. This file
 contains a sample of labyrinth for these exercises.
 
 ## Exercise 1 - Utility functions
-(1) Write a first function that takes a labyrinth matrix like the one in
+1. Write a first function that takes a labyrinth matrix like the one in
 Figure 1 as argument and draws it using the characters `##` for walls and two
 spaces for passages. This function should also accept a list of (x,y) tuples
 that represent positions visited by a robot in the labyrinth, you should print
 the character '.' at these points.
 
-`labyrinth =\
+```
+labyrinth =\
 [[0,0,0,0,0,0,1,0],
  [0,1,0,1,1,1,1,0],
  [0,1,1,1,0,1,0,0],
@@ -21,18 +22,21 @@ the character '.' at these points.
  [0,1,1,0,1,1,1,0],
  [0,0,1,1,1,0,0,0],
  [0,1,1,0,1,1,1,0],
- [0,1,0,0,0,0,0,0]]`
+ [0,1,0,0,0,0,0,0]]
+````
 
-(2) Write a second function `adjacent_passages` that takes a labyrinth matrix
+2. Write a second function `adjacent_passages` that takes a labyrinth matrix
 like the one above and the x and y coordinates for a place in the labyrinth as
 arguments, and returns a list of the coordinates (tuples of x and y) of all
 adjacent places (in 4 connexity) that are passages (i.e., have value 1). For
 instance:
 
-`>>> adjacent_passages(labyrinth, 1, 1)
+```
+>>> adjacent_passages(labyrinth, 1, 1)
 [(1, 2)]
-`>>> adjacent_passages(labyrinth, 6, 1)
-[(6, 0), (5, 1)]`
+>>> adjacent_passages(labyrinth, 6, 1)
+[(6, 0), (5, 1)]
+```
 
 ## Exercice 2 - Depth-first search
 Write a search function that finds a way through the labyrinth. The entrance is
