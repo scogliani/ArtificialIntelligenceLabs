@@ -2,7 +2,7 @@
 
 from typing import List, Tuple
 
-from .FindPathTemplateMethod import FindPathStack
+from .find_path_template_method import FindPathStack
 
 
 def find_path_df(labyrinth: List[List[int]], entrance: Tuple[int, int],

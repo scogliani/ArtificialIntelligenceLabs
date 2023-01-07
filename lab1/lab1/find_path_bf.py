@@ -2,7 +2,7 @@
 
 from typing import List, Tuple
 
-from .FindPathTemplateMethod import FindPathQueue
+from .find_path_template_method import FindPathQueue
 
 
 def find_path_bf(labyrinth: List[List[int]], entrance: Tuple[int, int],
