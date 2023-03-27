@@ -34,7 +34,7 @@ the maximum amount of memory used by the different versions of the algorithms.
 time, number of steps and cost. Compare the results with your theoretical
 results and give conclusions.
 
-### Delivrables
+# Delivrables
 
 At the end of the lab session, you must hand in the **source code** containing
 exercises as a tar file sent by email.

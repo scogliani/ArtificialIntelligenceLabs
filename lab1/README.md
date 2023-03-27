@@ -56,7 +56,7 @@ Write a function `find_path_bg` that implements a breadth-first search using a
 queue. You will only need to change a few lines of the previous algorithm for
 this.
 
-### Delivrables
+# Delivrables
 
 At the end of the lab session, you must hand in the source code containing
 exercises as a tar file sent by email
