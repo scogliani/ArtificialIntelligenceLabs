@@ -38,7 +38,7 @@ instance:
 [(6, 0), (5, 1)]
 ```
 
-## Exercice 2 - Depth-first search
+## Exercise 2 - Depth-first search
 Write a search function that finds a way through the labyrinth. The entrance is
 at (6,0) the exit at (1,15) for the labyrinth. The function should effectively
 perform a depth-first search.
@@ -51,7 +51,7 @@ Your task now is to complete this algorithm to use to perform the search
 throught the labyrinth.
 Don't forget to detect already visited coordinates to avoid infinite loop.
 
-## Exercice 3 - Breadth-first search
+## Exercise 3 - Breadth-first search
 Write a function `find_path_bg` that implements a breadth-first search using a
 queue. You will only need to change a few lines of the previous algorithm for
 this.
