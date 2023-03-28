@@ -1,0 +1,12 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Sudoku {
+  - grid : string
+  - boxSize : int
+  + getFriendCell()
+  + display()
+  + solve()
+  - buildPendingMarks()
+  - buildDomainValues()
+}
+@enduml
