@@ -66,7 +66,7 @@ compute the total number of states for a 9x9 grid.
 
 The class Sudoku (Figure 3) is defined by four methods:
 
-| ![sudoku-class](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/scogliani/ArtificialIntelligenceLabs/main/lab3/etc/sudoku-class.iuml) |
+| ![sudoku-class](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/scogliani/ArtificialIntelligenceLabs/main/lab3/etc/sudoku.iuml) |
 |:-:|
 | Figure 3. The Sudoku class. |
 
