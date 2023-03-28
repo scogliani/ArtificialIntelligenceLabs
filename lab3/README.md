@@ -37,11 +37,17 @@ In a first time for your development you can work with a 4x4 puzzle, to avoid
 enormous search-space. The rules remain the same except that you have to place
 digits from 1 to 4. Figure 2 gives you an example of such a Sudoku grid.
 
-|:-:|:-:|:-:|:-:|  |:-:|:-:|:-:|:-:|
-|   |   | 2 |   |  | 1 | 4 | 2 | 3 |
-| 2 |   |   | 4 |  | 2 | 3 | 1 | 4 |
-|   |   | 3 |   |  | 4 | 2 | 3 | 1 |
-|   | 1 |   |   |  | 3 | 1 | 4 | 2 |
+|   |   | 2 |   |
+|:-:|:-:|:-:|:-:|
+| 2 |   |   | 4 |
+|   |   | 3 |   |
+|   | 1 |   |   |
+
+| 1 | 4 | 2 | 3 |
+|:-:|:-:|:-:|:-:|
+| 2 | 3 | 1 | 4 |
+| 4 | 2 | 3 | 1 |
+| 3 | 1 | 4 | 2 |
 ---
 Figure 2. A smaller version of the Sudoku puzzle.
 
@@ -60,22 +66,9 @@ compute the total number of states for a 9x9 grid.
 
 The class Sudoku (Figure 3) is defined by four methods:
 
-```plantuml
-@startuml
-skinparam classAttributeIconSize 0
-class Sudoku {
-  - grid : string
-  - boxSize : int
-  + getFriendCell()
-  + display()
-  + solve()
-  - buildPendingMarks()
-  - buildDomainValues()
-}
-@enduml
-```
----
-Figure 3. The Sudoku class.
+| ![sudoku-class](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/scogliani/ArtificialIntelligenceLabs/main/lab3/etc/sudoku-class.iuml) |
+|:-:|
+| Figure 3. The Sudoku class. |
 
 
 
@@ -84,7 +77,7 @@ Figure 3. The Sudoku class.
 Add a method *display()* that display the current grid as it is stored in the
 class Sudoku.
 
-## Exercise 4 - Comparing the search algorithms
+## Exercise 4 - Write a naive backtracking solver
 
 Implement the methid *solve()* that performs an uninformed depth-first search
 algorithm. In the text document, draw a report with the execution time of your
