@@ -70,7 +70,21 @@ The class Sudoku (Figure 3) is defined by four methods:
 |:-:|
 | Figure 3. The Sudoku class. |
 
-
+1. A constructor that builds a Sudoku grid of size n * n from a string with an
+initial configuration (e.g., '1 3 2 4 2 ' for the grid in the Figure 2). The
+grid is stored as a flat string where the index *i* in the grid is the
+grid[i/n][i%n].
+2. Then the method *buildDomainValues()* returns the list of the value domain
+for all cells. For instance, this returns for the Figure 2 the following list:
+['1234', '1234', '2', '1234', '2', '1234', '1234', '4', '1234', '1234',
+ '3', '1234', '1234', '1', '1234', '1234']
+3. The method *buildPendingMarks()* returns a list of the initial variable
+settings with the given values. For instance, it returns for Figure 2:
+[(2, '2'), (4, '2'), (7, '4'), (10, '3'), (13, '1')]
+4. Finally, the method *getFriendCells()* returns the list of cell coordinates
+that are in contact with a given cell (in the same row, column and box). For
+instance, the neighbors of cell 0 are:
+(1, 2, 3, 4, 5, 8, 12)
 
 ## Exercise 3 - Utility function
 
