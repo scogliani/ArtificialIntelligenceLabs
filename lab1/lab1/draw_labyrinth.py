@@ -5,9 +5,9 @@ from typing import List, Tuple
 
 def draw_labyrinth(labyrinth: List[List[int]], path: List[Tuple[int, int]]
                    ) -> str:
-    """! Output a labyrinth integer matrix to a terminal with '##' for representing 0,
-    and '  ' for representing 1. A path is also draw from the path (represented
-    by '. '
+    """! Output a labyrinth integer matrix to a terminal with '##' for
+    representing 0, and '  ' for representing 1. A path is also draw from the
+    path (represented by '. '
     @param labyrinth A list of list representing a labyrinth matrix
     @param path A list representing the way used
 

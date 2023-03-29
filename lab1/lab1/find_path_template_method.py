@@ -51,20 +51,21 @@ class FindPathTemplateMethod(metaclass=abc.ABCMeta):
 
         ds = self.data_structure_strategy()
 
-        ds.add(self.__begin)
+        ds.add([self.__begin])
         while not ds.empty():
-            position = ds.remove()
+            path = ds.remove()
+            position = path[-1]
 
             visited.append(position)
 
             for e in adjacent_passages(self.__labyrinth, *position):
                 if e not in visited:
-                    ds.add(e)
+                    ds.add(path + [e])
 
-            if self.__end in visited:
-                break
+            if position == self.__end:
+                return path[1:]
 
-        return visited
+        return None
 
     @abc.abstractmethod
     def data_structure_strategy(self) -> Strategy:
