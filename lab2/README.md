@@ -22,7 +22,7 @@ previous exercise.
 Investigate the different order in which the neighbors of a position is
 returned by your function **adjacent_passages**.
 
-1. Based on the result, compute how many modes theoretically were visited
+1. Based on the result, compute how many nodes theoretically were visited
 during the depth, respectively breadth-first search. Also compute/estimate
 the maximum amount of memory used by the different versions of the algorithms.
 
